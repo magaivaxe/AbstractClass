@@ -6,7 +6,9 @@
 package inheritance;
 
 /**
- *
+ * On the abstracts classes differently from interfaces. It is possible create 
+ * the abstract methods and not abstract methods. Instead Interface where all
+ * methods must be abstracts to implementation
  * @author eleves
  */
 public class Inheritance
@@ -17,7 +19,12 @@ public class Inheritance
      */
     public static void main(String[] args)
     {
-        // TODO code application logic here
+        Wolf w = new Wolf("Brown", 20, 1.25);
+        w.drink();
+        w.eat();
+        w.move();
+        w.scream();
+        System.out.println(w.toString());
     }
     
 }
